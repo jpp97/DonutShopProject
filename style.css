@@ -6,11 +6,26 @@
 	/* border: 1px solid red; */
 }
 /* Header Bar */
-header {
+.header-nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	max-height: 10vh;
+}
+.header-nav-list {
+	list-style: none;
+}
+.header-nav-links {
+	display: inline-flex;
+	padding: 6vw;
+}
+.header-nav-links a {
+	text-decoration: none;
+	font-size: 2em;
+}
+.header-nav-links a:hover {
+	cursor: pointer;
+	color: black;
 }
 .logo {
 	max-width: 5vh;
