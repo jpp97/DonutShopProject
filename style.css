@@ -8,25 +8,29 @@
 }
 /* layout */
 body {
-	max-height: 100vh;
+	min-height: 95vh;
+	min-width: 95vw;
 	display: grid;
+	grid-template-rows: 1fr 4fr 1fr;
+	grid-template-columns: 2vw 96vw 2vw;
 	grid-template-areas:
-		"header header header"
-		"main main main"
-		"footer footer footer";
-	grid-template-columns: 0 100% 0;
-	grid-template-rows: 15vh 80vh 10vh;
+		". header ."
+		". main ."
+		". footer .";
 }
 header {
 	grid-area: header;
+	height: 15vh;
+	width: 100vw;
 }
 main {
 	grid-area: main;
 }
 footer {
 	grid-area: footer;
+	height: 15vh;
+	width: 100vw;
 }
-*/
 /* Nav */
 .nav-box {
 	display: flex;
@@ -38,11 +42,11 @@ footer {
 }
 .nav-list li {
 	display: inline;
+	padding: 1vh 3vw;
 }
 .nav-list a {
 	text-decoration: none;
 	font-size: 2em;
-	padding: 0 2vw 0 2vw;
 }
 .nav-list a:hover {
 	color: black;
@@ -52,6 +56,7 @@ footer {
 .logo {
 	max-width: 5vw;
 	max-height: 5vh;
+	margin: 1vh 1vh 1vh 1vh;
 }
 .contact-button-box {
 	display: inline-block;
@@ -63,8 +68,7 @@ footer {
 	border-radius: 50px;
 	border: none;
 	cursor: pointer;
-	float: right;
-	margin-top: 2px;
+	margin: 1vh 2vw 1vh 1vw;
 }
 .contact-button:hover {
 	background-color: antiquewhite;
