@@ -1,34 +1,60 @@
 * {
-	margin: 0%;
-	padding: 0%;
+	margin: 0;
+	padding: 0;
 	background-color: rgb(178, 105, 247);
 	color: antiquewhite;
+	font-size: 1em;
 	/* border: 1px solid red; */
 }
-/* Header Bar */
-.header-nav {
+/* layout */
+body {
+	max-height: 100vh;
+	display: grid;
+	grid-template-areas:
+		"header header header"
+		"main main main"
+		"footer footer footer";
+	grid-template-columns: 0 100% 0;
+	grid-template-rows: 15vh 80vh 10vh;
+}
+header {
+	grid-area: header;
+}
+main {
+	grid-area: main;
+}
+footer {
+	grid-area: footer;
+}
+*/
+/* Nav */
+.nav-box {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	max-height: 10vh;
 }
-.header-nav-list {
-	list-style: none;
+.nav-list {
+	display: inline;
 }
-.header-nav-links {
-	display: inline-flex;
-	padding: 6vw;
+.nav-list li {
+	display: inline;
 }
-.header-nav-links a {
+.nav-list a {
 	text-decoration: none;
 	font-size: 2em;
+	padding: 0 2vw 0 2vw;
 }
-.header-nav-links a:hover {
-	cursor: pointer;
+.nav-list a:hover {
 	color: black;
+	cursor: pointer;
 }
+
 .logo {
-	max-width: 5vh;
+	max-width: 5vw;
+	max-height: 5vh;
+}
+.contact-button-box {
+	display: inline-block;
 }
 .contact-button {
 	padding: 2vh 5vw;
@@ -37,21 +63,10 @@
 	border-radius: 50px;
 	border: none;
 	cursor: pointer;
+	float: right;
+	margin-top: 2px;
 }
 .contact-button:hover {
 	background-color: antiquewhite;
 	color: black;
-}
-
-.nav-links {
-	display: inline-flex;
-	padding: 5vw;
-}
-.nav-links a {
-	text-decoration: none;
-	font-size: 2em;
-}
-.nav-links a:hover {
-	color: black;
-	cursor: pointer;
 }
