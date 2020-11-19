@@ -81,9 +81,15 @@ footer {
 	color: #f8c7cc;
 	text-align: center;
 	margin: 3vh;
+	font-size: 3em;
 }
 .main-1 {
 	font-size: 2em;
+}
+.main-2 {
+	text-align: center;
+	font-size: 2em;
+	color: #81a684;
 }
 .img-box {
 	margin-top: 3%;

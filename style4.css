@@ -62,6 +62,7 @@ html {
 .main-content {
 	font-size: 3em;
 	text-align: center;
+	margin: 0 5vw 0 5vw;
 }
 .flex-container {
 	margin: 15vh 5vw 0 5vw;
@@ -82,6 +83,7 @@ html {
 .social-p {
 	text-align: center;
 	font-size: 2em;
+	margin: 0 5vw 5vh 5vw;
 }
 .facebook {
 	display: flex;
