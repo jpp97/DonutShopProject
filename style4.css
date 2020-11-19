@@ -4,6 +4,11 @@
 	background-color: #466060;
 	color: antiquewhite;
 }
+body,
+html {
+	min-height: 100vh;
+	min-width: 95vw;
+}
 /* Nav */
 .nav-box {
 	display: flex;
@@ -59,7 +64,7 @@
 	text-align: center;
 }
 .flex-container {
-	margin: 15vh 5vw 15vh 5vw;
+	margin: 15vh 5vw 0 5vw;
 	max-width: 90vw;
 	display: flex;
 	justify-content: space-around;
@@ -69,6 +74,51 @@
 .contact-info {
 	font-size: 2em;
 }
+.social-heading {
+	text-align: center;
+	font-size: 4em;
+	color: #f8c7cc;
+}
+.social-p {
+	text-align: center;
+	font-size: 2em;
+}
+.facebook {
+	display: flex;
+	align-items: center;
+}
+.facebook a {
+	font-size: 4em;
+	margin: 0 5vw 0 5vw;
+	text-decoration: none;
+}
+.twitter {
+	display: flex;
+	align-items: center;
+}
+.twitter a {
+	font-size: 4em;
+	margin: 0 5vw 0 5vw;
+	text-decoration: none;
+}
+.instagram {
+	display: flex;
+	align-items: center;
+}
+.instagram a {
+	font-size: 4em;
+	margin: 0 5vw 0 5vw;
+	text-decoration: none;
+}
+.social-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.social-container a:hover {
+	color: black;
+	cursor: pointer;
+}
+
 /* footer styles/layout*/
 footer {
 	font-size: 1.5em;
